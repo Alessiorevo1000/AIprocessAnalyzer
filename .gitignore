@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Generated reports
+*.html
+*.json
+!package.json
+!package-lock.json
+!pc-analyzer.config.json
+*.txt
+*.md
+!README.md
+
+# Cache
+.pc-analyzer-cache/
+.cache/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

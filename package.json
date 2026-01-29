@@ -1,0 +1,46 @@
+{
+  "name": "pc-config-analyzer",
+  "version": "2.0.0",
+  "description": "Analyzes PC configuration, detects misconfigurations, and profiles user behavior with AI",
+  "main": "src/index.js",
+  "bin": {
+    "pc-analyzer": "src/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "analyze": "node src/index.js",
+    "analyze:fast": "node src/index.js --no-llm --no-network",
+    "analyze:json": "node src/index.js --json",
+    "analyze:html": "node src/index.js --html -o report",
+    "analyze:md": "node src/index.js --markdown -o report",
+    "init-config": "node src/index.js --init-config",
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "pc",
+    "configuration",
+    "analyzer",
+    "system",
+    "hardware",
+    "process",
+    "profiler",
+    "ai",
+    "ollama",
+    "monitoring",
+    "diagnostics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.13.4",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "systeminformation": "^5.21.15",
+    "table": "^6.8.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
