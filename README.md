@@ -32,7 +32,21 @@ A powerful Node.js tool that analyzes your PC configuration, detects potential m
 - [Ollama](https://ollama.ai) installed and running (optional, for AI features)
 - Gemma2:9B model downloaded (`ollama pull gemma2:9b`)
 
-## 🚀 Installation
+## 🚀 Quick Start
+
+### Option 1: Auto-Installer (Windows) ⭐ **RECOMMENDED**
+
+**Easiest method** - Double-click `PC-Config-Analyzer.bat` and it will:
+1. ✅ Check and install Node.js if missing
+2. ✅ Check and install Ollama if missing
+3. ✅ Install all npm dependencies automatically
+4. ✅ Download the AI model (gemma2:9b)
+5. ✅ Create configuration file
+6. ✅ Launch the application with a menu
+
+**No manual installation required!** Just download the project and run the `.bat` file.
+
+### Option 2: Manual Installation
 
 ```bash
 # Clone the repository
@@ -48,6 +62,21 @@ npm link
 # (Optional) Install and start Ollama
 # Visit https://ollama.ai for installation instructions
 ollama pull gemma2:9b
+ollama serve
+```
+
+## 🎯 Usage
+
+### Quick Launch (Windows)
+Double-click `PC-Config-Analyzer.bat` for interactive menu:
+1. Full analysis (with AI and network)
+2. Quick analysis (without AI)
+3. CPU only
+4. Memory only
+5. Full HTML report
+6. Exit
+
+### Command Line
 ollama serve
 ```
 
