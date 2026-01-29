@@ -1,0 +1,40 @@
+{
+  "ollamaUrl": "http://localhost:11434",
+  "ollamaModel": "gemma2:9b",
+  "ollamaTimeout": 120000,
+  "useLlm": true,
+  "maxLlmIterations": 5,
+  "analyzeNetwork": true,
+  "maxProcesses": 400,
+  "verbose": false,
+  "colorOutput": true,
+  "useCache": true,
+  "cacheDir": ".pc-analyzer-cache",
+  "cacheTtlHours": 24,
+  "enabledCategories": [
+    "development",
+    "gaming",
+    "office",
+    "browsers",
+    "media",
+    "communication",
+    "database",
+    "networking",
+    "security",
+    "virtualization",
+    "cloudStorage",
+    "system",
+    "ai",
+    "streaming"
+  ],
+  "customKeywords": {},
+  "excludeProcesses": [
+    "system idle process",
+    "system",
+    "registry"
+  ],
+  "reportFormat": "text",
+  "includeTimestamp": true,
+  "detectSuspiciousProcesses": true,
+  "alertOnSuspicious": true
+}
